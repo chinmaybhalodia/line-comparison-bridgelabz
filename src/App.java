@@ -13,5 +13,8 @@ public class App {
 
         // checking if lengths of l1 and l2 are equal
         System.out.println("The lines have equal lengths: " + Line.checkEquality(l1, l2));
+
+        // comparing lengths of l1 and l2
+        Line.compareLengths(l1, l2);
     }
 }

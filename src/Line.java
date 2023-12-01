@@ -22,4 +22,16 @@ public class Line {
     public static boolean checkEquality(Line l1, Line l2) {
         return l1.calculateLength() == l2.calculateLength();
     }
+
+    // UC3: compare the lengths of the lines
+    public static void compareLengths(Line l1, Line l2) {
+        int res = Double.compare(l1.calculateLength(), l2.calculateLength());
+        if (res > 0) {
+            System.out.println("Line 1 is longer than Line 2");
+        } else if (res < 0) {
+            System.out.println("Line 2 is longer than Line 1");
+        } else {
+            System.out.println("Both lines have equal lengths");
+        }
+    }
 }
