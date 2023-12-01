@@ -17,4 +17,9 @@ public class Line {
 
         return Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
     }
+
+    // UC2: check if 2 lines have equal lengths
+    public static boolean checkEquality(Line l1, Line l2) {
+        return l1.calculateLength() == l2.calculateLength();
+    }
 }
